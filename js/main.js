@@ -103,7 +103,7 @@ var game = {
   }
   
 // check the result 
-// this function check all possible Tic Tac Toe outcomes and changes winning icons
+// this function check all possible Tic Tac Toe outcomes 
   function gameStatus() {
     var curPlayer;
   
@@ -151,7 +151,7 @@ var game = {
     }
   };
   
-  // Is it a draw??
+  // accounting for a draw 
   function draw() {
     if (game.moves === 9) {
       setTimeout(reset, 1000);
@@ -171,6 +171,7 @@ var game = {
   }
   
  // this last function reverts everything to beginning except the player figures
+ // will not show modal again only when the page is loaded 
   function reset() {
     $('.game-field').html('');
     game.moves = 1;
